@@ -1,0 +1,22 @@
+#p1{
+    background-color:aliceblue;
+        font-size:large;
+}
+div {
+    background-color: #4d9da1;
+    font-size: medium;
+    color: azure;
+}
+#p2{
+    background-color:burlywood;
+}
+.center-aligment{
+    text-align:center
+}
+#div1 {
+    margin: 38px 50px 33px 61px;
+    border: 34px solid #ff0000;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 39px 28px 27px red;
+}

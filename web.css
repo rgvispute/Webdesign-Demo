@@ -1,0 +1,107 @@
+nav {
+    background-color: #f7e0e0;
+    height: 48px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+#menu{
+    list-style-type:none;
+    display:inline-flex;
+    float:right;
+
+}
+#menu li{
+    margin-right: 30px;
+}
+#menu li a{
+    text-decoration:none;
+}
+#banner1{
+    position:relative;
+    margin-top:3px;
+    background-image:url('banner1.jpg');
+    height:200px;
+    width:100%;
+    background-position:bottom;
+}
+#banner1 h1{
+    position:absolute;
+    top:82px;
+    bottom:84px;
+}
+.Leftpannel {
+    
+    background-color: beige;
+    width: 30%;
+}
+    .Leftpannel ul {
+        list-style-type: none;
+        background-color: beige;
+        width: 20%;
+        height: 45%;
+        margin-top: 10px;
+        font-size: 30px;
+        font-style: normal;
+    }
+table  {
+    position: absolute;
+    top: 396px;
+    bottom: 106px;
+    margin-right: -78px;
+    margin-left: 387px;
+}
+#mainc {
+    margin-top: 14px;
+    font-size: 40px;
+    margin-left: 358px;
+    color: #294cb0;
+    margin-right: 336px;
+}
+
+#m {
+    font-size: 35px;
+   
+    color: #294cb0;
+    margin-left: 340px;
+}
+
+h1 {
+    color: red;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+    ul li {
+        margin-right: 20px;
+    }
+/*tab device*/
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    h1 {
+        color: green;
+        font-size: 25px;
+    }
+}
+
+/*mobile device*/
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+
+    h1 {
+        color: blue;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    ul {
+        display: block;
+    }
+}
+
+
+
