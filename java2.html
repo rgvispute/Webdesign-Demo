@@ -1,0 +1,118 @@
+<html>
+<head></head>
+<body>
+     <div id="d1"></div>
+     <div id="d2"></div>
+     <div id="d3"></div>
+     <div id="d4"></div>
+    <p>
+        Enter color:<input type="text" id="t1"/>
+    </p>
+    <p>
+        <input type="button" value="Add color at last" onclick="addlast()" />
+        <input type="button" value="Add color at first" onclick="addfirst()" />
+        <input type="button" value="Remove color from first" onclick="removefirst()" />
+        <input type="button" value="Remove color from last" onclick="removelast()" />
+    </p>
+    <script>
+        var number = [23, 20, 27, 56, 78, 98, 45, 67, 90];
+        //number.push("2");
+       // number.unshift("8");
+        //number.pop();
+        //number.shift();
+        //number.splice(3, 0, 4, 4);
+        //const numbercopy = number.slice(4, 7);
+        number.sort(function(a,b){ return b-a});
+       // number.sort(function (a, b) { return a-b });
+
+
+        
+        var data = "<ol type'A'>";
+        for (let i = 0; i < number.length; i++) {
+            data += "<li>" + number[i] + "</li>";
+
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d3").innerHTML = data;
+       // document.getElementById("d4").innerHTML = numbercopy;
+        //console.log(numbercopy);
+       
+
+
+
+
+
+
+
+        //var color = ["red", "green", "Blue", "Pink"];
+        //color.splice(3, 0, "white", "Black");
+        //const colorcopy = color.slice(4, 3);
+        //color.sort();
+        //color.reverse();
+        // var data = "<ol type'A'>";
+        //for (let i = 0; i < color.length; i++) {
+        //    data += "<li>" + color[i] + "</li>";
+
+        //}
+        //data += "</ol>";
+        //console.log(data);
+        //document.getElementById("d1").innerHTML = data;
+
+
+
+
+
+        //var data = "";
+        //function display() {
+        //    data = "";
+            
+        //     data = "<ol type'A'>";
+        //    for (let i = 0; i < color.length; i++) {
+        //        data += "<li>" + color[i] + "</li>";
+
+        //    }
+        //    data += "</ol>";
+        //    console.log(data);
+        //    document.getElementById("d1").innerHTML = data;
+        //}
+
+        //function addlast() {
+        //    color.push(document.getElementById("t1").value);
+        //    display();
+            
+        //}
+
+        //function addfirst() {
+        //    color.unshift(document.getElementById("t1").value);
+        //    display();
+        //}
+
+        //function removelast() {
+        //    color.pop();
+        //    display();
+        //}
+
+        //function removefirst() {
+        //    color.shift();
+        //    display();
+        //}
+        //display();
+
+        //var city = ["Pune", "Khamgaon", "Mumbai", "Jalgaon"];
+        //city.push("Shegaon");
+        //city.unshift("Amravati");
+        ////city.pop();
+        ////city.shift();
+        //var data = "<ul type'Square'>";
+        //for (let i = 0; i < city.length; i++) {
+        //    data += "<li>" + city[i] + "</li>";
+
+        //}
+        //data += "</ul>";
+        //console.log(data);
+        //document.getElementById("d2").innerHTML = data;
+    </script>
+</body>
+
+</html>

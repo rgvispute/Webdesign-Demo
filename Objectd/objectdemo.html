@@ -1,0 +1,155 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <script>
+        
+        //const student={
+        //    firstname : "Ruchita",
+        //    lastname: "Vispute",
+        //    rollno: 101,
+        //    age : 24,
+        //    english: 56,
+        //    marathi: 45,
+        //    hindi: 78,
+        //    percentage: function () {
+        //        var add = this.english + this.hindi + this.marathi
+        //        return "Roll no :" + this.rollno +"  Percentage of student is :" + (add / 300) * 100;
+
+        //    }
+
+        //}
+       
+        //document.getElementById("d1").innerHTML = student.percentage();
+        //document.getElementById("d1").innerHTML = JSON.stringify(student);
+
+        // Inbuild function
+        //const student = {
+        //    firstname: "Ruchita",
+        //    lastname:"Vispute",
+        //    rollno: 101,
+        //    fullname: function (city, country) {
+        //        return this.firstname + " " + this.lastname + " " + city + " "+country;
+        //    }
+        //}
+        //const member = {
+        //    firstname: "Ruchi",
+        //    lastname: "Dusane"
+        //}
+        //let stuinfo = student.fullname.bind(member);
+        //document.getElementById("d1").innerHTML = stuinfo();
+        //document.getElementById("d1").innerHTML = student.fullname.call(member, "Pune", "India");
+        //document.getElementById("d1").innerHTML = student.fullname.apply(member, ["Jalgaon", "India"]);
+
+
+        //const student=[
+        //    {
+        //        firstname:"Ruchita",
+        //        lastname:"Dusane",
+        //        percentage:90
+        //    },
+        //    {
+        //        firstname:"Gurav",
+        //        lastname:"Dusane",
+        //        percentage:98
+        //    },
+        //    {
+        //        firstname:"Ulka",
+        //        lastname:"Dusane",
+        //        percentage:99
+        //    }
+        //]
+        //var data = "<table border='1'<tr><th>First Name</th><th>Last Name</th><th>Percentage</th>";
+        //for (let i = 0; i < student.length; i++) {
+        //    data += "<tr><td>" + student[i].firstname + "</td><td>" + student[i].lastname + "</td><td>" + student[i].percentage + "</td><tr>";
+        //}
+        //data += "</table>";
+        //document.getElementById("d1").innerHTML = data;
+
+
+        ////callback function
+
+        //function add(a, b, mycallback) {
+        //    let sum= a+b;
+        //    mycallback(sum);
+        //}
+        //function display(sum) {
+        //    document.getElementById("d2").innerHTML = "Addition is :" + sum;
+        //}
+
+        //add(20, 30, display);
+
+        ////settimeout, showtime & setinterval function()
+
+        //setTimeout(function () {
+        //    document.getElementById("d3").innerHTML = "Hello All";
+        //}, 2000);
+
+        //function showtime() {
+        //    let d = new Date();
+        //    let result = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        //    document.getElementById("d4").innerHTML = result;
+        //}
+
+        //setInterval(showtime, 1000);
+
+
+        //function display(data) {
+        //    document.getElementById("d5").innerHTML = data;
+        //}
+
+        //var promise = new Promise(function (resolve, reject) {
+        //    let x = 10;
+        //    if (x == 10) {
+        //        resolve("Code run sucessfully");
+        //    }
+        //    else {
+        //        reject("Error in code")
+        //    }
+        //});
+        //promise.then(function (value) {
+        //    display(value);
+        //},
+        //    function (error) {
+        //        display(error);
+        //    });
+
+
+        var color = ["Pink", "red", "Yellow"];
+        function display(data) {
+            var text = "<ul>";
+
+
+
+            for (let i = 0; i < data.length; i++) {
+                text += "<li>" + data[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("d4").innerHTML = text;
+        }
+
+        function displayerror(data) {
+            document.getElementById("d5").innerHTML = data;
+        }
+
+        var promise = new Promise(function (resolve, reject) {
+
+            if (color != null) {
+                resolve(color);
+            }
+            else {
+                reject("Error in code");
+            }
+        });
+        promise.then(function (value) {
+            display(value);
+        }).catch (function (error) {
+                displayerror(error);
+            });
+            
+    </script>
+    </body>
+</html>

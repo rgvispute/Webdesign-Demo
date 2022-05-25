@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+
+    <!--bubbling and capturing-->
+    <div id="parent">
+        <button type="button">Parents</button>
+        <div id="child">
+            <button type="button">child</button>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById("parent").addEventListener("click", function () {
+            alert("inside parents");
+        },false);
+
+        document.getElementById("child").addEventListener("click", function () {
+            alert("inside child");
+        }, false);
+
+
+        var result = confirm("do you want to pay");
+        if (result == true) {
+            alert("success");
+        }
+        else {
+            alert("cancle");
+        }
+    </script>
+</body>
+</html>
